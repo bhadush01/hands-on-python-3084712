@@ -1,13 +1,16 @@
-RUN_INDENTED = False
+greet ="Hello World"  
+extened_grt = "Hello World"  
 
-message = "running unindented"
+name = "John" 
 
-if RUN_INDENTED:
-    message = "running indented"
+interuption = f"Hello {name}" 
 
-print(message)
+greet_format = "Hello{}"
 
+formatted = greet_format.format(name) 
 
-def my_function():
-    greet = "Hello"
-    return greet
+print(interuption, formatted) 
+
+print(formatted.upper()) 
+print(formatted.lower()) 
+print(formatted.replace("John", "Paul"))
